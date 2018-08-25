@@ -8,7 +8,7 @@
 	<name>Home Automation Model</name>
 	<description>This project contains the model objects that will be passed to the rules system.  All external models will need to be converted into this model.</description>
 	<properties>
-		<version.org.drools>7.5.0.Final-redhat-4</version.org.drools>
+		<version.org.drools>7.9.0.Final</version.org.drools>
 	</properties>
 	<distributionManagement>
 		<repository>
