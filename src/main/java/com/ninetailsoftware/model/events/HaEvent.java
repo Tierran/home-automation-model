@@ -1,8 +1,10 @@
 package com.ninetailsoftware.model.events;
 
+import org.kie.api.definition.type.Expires;
 import org.kie.api.definition.type.Role;
 
 @Role(Role.Type.EVENT)
+@Expires("1s")
 public class HaEvent {
 	private String source;
 	private String floor;
