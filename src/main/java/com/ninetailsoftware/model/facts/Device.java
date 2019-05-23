@@ -14,4 +14,9 @@ public interface Device {
 	public void setSource(String source);
 	public Boolean isDisableWhenAway();
 	public void setDisableWhenAway(Boolean disableWhenAway);
+	public Boolean isInitialLoad();
+	public void setInitialLoad(Boolean initialLoad);
+	public Boolean isSendUpdate();
+	public void setSendUpdate(Boolean sendUpdate);
+
 }

@@ -10,6 +10,8 @@ public class TheSun implements Device {
 	private String room;
 	private String id;
 	private String source;
+	private Boolean initialLoad;
+	private Boolean sendUpdate;
 	
 	public String getSource() {
 		return source;
@@ -56,6 +58,21 @@ public class TheSun implements Device {
 	public void setDisableWhenAway(Boolean disableWhenAway) {
 		// TODO Auto-generated method stub
 		
+	}
+	public Boolean isInitialLoad() {
+		return initialLoad;
+	}
+
+	public void setInitialLoad(Boolean initialLoad) {
+		this.initialLoad = initialLoad;		
+	}
+
+	public Boolean isSendUpdate() {
+		return sendUpdate;
+	}
+
+	public void setSendUpdate(Boolean sendUpdate) {
+		this.sendUpdate = sendUpdate;
 	}
 
 }

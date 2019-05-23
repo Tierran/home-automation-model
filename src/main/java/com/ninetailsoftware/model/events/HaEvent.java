@@ -1,16 +1,12 @@
 package com.ninetailsoftware.model.events;
 
-import org.kie.api.definition.type.Expires;
-import org.kie.api.definition.type.Role;
-
-@Role(Role.Type.EVENT)
-@Expires("1s")
 public class HaEvent {
 	private String source;
 	private String floor;
 	private String room;
 	private String deviceId;
 	private String value;
+	private Boolean sendUpdate;
 	
 	public String getSource() {
 		return source;
@@ -42,6 +38,10 @@ public class HaEvent {
 	public void setValue(String value) {
 		this.value = value;
 	}
-
-	
+	public Boolean isSendUpdate() {
+		return sendUpdate;
+	}
+	public void setSendUpdate(Boolean sendUpdate) {
+		this.sendUpdate = sendUpdate;
+	}
 }

@@ -10,6 +10,13 @@ public class SimpleSwitch implements Device{
 	private String id;
 	private String source;
 	private Boolean disableWhenAway;
+	private Boolean initialLoad;
+	private Boolean sendUpdate;
+	
+	public SimpleSwitch() {
+		this.status = "0";
+		this.sendUpdate = false;
+	}
 	
 	public String getSource() {
 		return source;
@@ -52,6 +59,21 @@ public class SimpleSwitch implements Device{
 	}
 	public void setDisableWhenAway(Boolean disableWhenAway) {
 		this.disableWhenAway = disableWhenAway;
+	}
+	public Boolean isInitialLoad() {
+		return initialLoad;
+	}
+
+	public void setInitialLoad(Boolean initialLoad) {
+		this.initialLoad = initialLoad;		
+	}
+
+	public Boolean isSendUpdate() {
+		return sendUpdate;
+	}
+
+	public void setSendUpdate(Boolean sendUpdate) {
+		this.sendUpdate = sendUpdate;
 	}
 
 }
