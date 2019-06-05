@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ninetailsoftware</groupId>
 	<artifactId>HomeAutomationModel</artifactId>
-	<version>0.5.1</version>
+	<version>0.5.2</version>
 	<name>Home Automation Model</name>
 	<description>This project contains the model objects that will be passed to the rules system.  All external models will need to be converted into this model.</description>
 	<properties>

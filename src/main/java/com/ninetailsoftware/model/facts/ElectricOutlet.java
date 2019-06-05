@@ -14,6 +14,11 @@ public class ElectricOutlet implements Device {
 	private Boolean initialLoad;
 	private Boolean sendUpdate;
 	
+	public ElectricOutlet() {
+		sendUpdate = false;
+		status = "0";
+	}
+	
 	public String getSource() {
 		return source;
 	}

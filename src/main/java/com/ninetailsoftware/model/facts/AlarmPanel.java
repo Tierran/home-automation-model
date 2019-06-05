@@ -13,6 +13,11 @@ public class AlarmPanel implements Device {
 	private Boolean initialLoad;
 	private Boolean sendUpdate;
 	
+	public AlarmPanel() {
+		sendUpdate = false;
+		status = "0";
+	}
+	
 	public String getSource() {
 		return source;
 	}

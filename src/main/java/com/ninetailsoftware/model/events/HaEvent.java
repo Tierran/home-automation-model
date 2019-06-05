@@ -6,7 +6,11 @@ public class HaEvent {
 	private String room;
 	private String deviceId;
 	private String value;
-	private Boolean sendUpdate = false;
+	private Boolean sendUpdate;
+	
+	public HaEvent() {
+		sendUpdate = new Boolean(false);
+	}
 	
 	public String getSource() {
 		return source;

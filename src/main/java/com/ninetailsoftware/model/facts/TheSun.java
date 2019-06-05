@@ -13,6 +13,11 @@ public class TheSun implements Device {
 	private Boolean initialLoad;
 	private Boolean sendUpdate;
 	
+	public TheSun() {
+		sendUpdate = false;
+		status = "0";
+	}
+	
 	public String getSource() {
 		return source;
 	}
