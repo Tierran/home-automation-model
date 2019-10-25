@@ -1,6 +1,7 @@
 package com.ninetailsoftware.model.facts;
 
 import java.util.Date;
+import java.util.List;
 
 public class Room {
 	private String status;
@@ -8,7 +9,14 @@ public class Room {
 	private String floor;
 	private String room;
 	private String id;
+	private List<String> adjacentRooms;
 	
+	public List<String> getAdjacentRooms() {
+		return adjacentRooms;
+	}
+	public void setAdjacentRooms(List<String> adjacentRooms) {
+		this.adjacentRooms = adjacentRooms;
+	}
 	public String getStatus() {
 		return status;
 	}
